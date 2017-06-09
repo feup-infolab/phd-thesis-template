@@ -1,6 +1,8 @@
 # LaTeX Template for PhD Theses
 
-This is a template heavily based on [https://www.ctan.org/pkg/arsclassica](ArsClassica) PhD Thesis template. I adopted for [my PhD thesis](https://repositorio-aberto.up.pt/handle/10216/83993) in 2016, and decided to share it. The thesis was [presented before jury](https://sigarra.up.pt/feup/pt/noticias_geral.ver_noticia?p_nr=51969) in May 2016, at the Faculdade de Engenharia da Universidade do Porto.
+This is a template heavily based on [https://www.ctan.org/pkg/arsclassica](ArsClassica) PhD Thesis template. I adopted for [my PhD thesis](https://repositorio-aberto.up.pt/handle/10216/83993) in 2016, and decided to share it. The thesis was [presented before jury](https://sigarra.up.pt/feup/pt/noticias_geral.ver_noticia?p_nr=51969) in May 2016, at the Faculdade de Engenharia da Universidade do Porto. The doctoral programme was the Doctoral Programme in Informatics Engineering (ProDEI).
+
+**This is NOT an official template of FEUP.** However, it does look good :-)
 
 ## Improvements / Changes
 I got the base template and fixed some things, such as:
@@ -72,8 +74,6 @@ thinkpad:~ joaorocha$
 ## Disclaimer 
 
 This is NOT an official template of FEUP or any other institution, as far as I know. You use it at your own risk.
-
-....but it sure looks good :-)
 
 ## Author
 
