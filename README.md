@@ -71,7 +71,7 @@ thinkpad:~ joaorocha$
 
 ## Disclaimer 
 
-This is NOT an official template. 
+This is NOT an official template of FEUP or any other institution, as far as I know. You use it at your own risk.
 
 ....but it sure looks good :-)
 
