@@ -5,6 +5,7 @@ Modifications: by João Rocha da Silva, 2016
 
 ### Original README File
 
+````
 **********************************************************
 *                  ArsClassica package                   *
 **********************************************************
@@ -43,3 +44,5 @@ Installation
  to finish installation.
  To produce the documentation, run TeseDoutoramento.tex
  through pdfLaTeX.
+
+````
