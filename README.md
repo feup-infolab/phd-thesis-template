@@ -34,7 +34,7 @@ compile.bat
 
 ## Versions of the software used to compile this template
 
-````
+```bash
 thinkpad:~ joaorocha$ xelatex -v
 XeTeX 3.14159265-2.6-0.99996 (TeX Live 2016)
 kpathsea version 6.2.2
@@ -54,15 +54,20 @@ Compiled with libpng version 1.6.21; using 1.6.21
 Compiled with poppler version 0.42.0
 Using Mac OS X Core Text and Cocoa frameworks
 thinkpad:~ joaorocha$ 
-````
+```
 
-````
+```bash
 thinkpad:~ joaorocha$ makeglossaries --help
 Makeglossaries Version 2.18 (2016-01-24)
 (...)
 thinkpad:~ joaorocha$ 
-````
+```
 
+```bash
+thinkpad:~ joaorocha$ biber -v
+biber version: 2.5
+thinkpad:~ joaorocha$
+```
 
 ## Disclaimer 
 
