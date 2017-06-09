@@ -1,9 +1,9 @@
-Modifications: Copyright (C) 2016 João Rocha da Silva
+Modifications: by João Rocha da Silva, 2016
 
 
 
 
-###Original README File
+### Original README File
 
 **********************************************************
 *                  ArsClassica package                   *
