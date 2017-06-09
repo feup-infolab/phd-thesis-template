@@ -1,0 +1,21 @@
+SELECT *
+FROM <http://127.0.0.1:3000/dendro_graph>
+WHERE
+{
+	?version ddr:isVersionOf <http://127.0.0.1:3000/project/dcb/data/Base%20Data>.
+	
+	{
+		SELECT ?latest_version_nmbr
+		FROM <http://127.0.0.1:3000/dendro_graph>
+		WHERE
+		{
+			?version ddr:versionnmbr ?latest_version_nmbr.
+		}
+		ORDER BY DESC(?latest_version_nmbr)
+		LIMIT 1
+	}
+	
+	?version ddr:versionnmbr ?latest_version_nmbr.
+	?change ddr:pertainsTo ?version.
+	?change ?p ?o.
+}

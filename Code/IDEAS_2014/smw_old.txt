@@ -1,0 +1,8 @@
+%//Example template syntax from the semantic mediawiki (FOAF ontology)
+
+%http://xmlns.com/foaf/0.1/|[http://www.foaf-project.org/ Friend Of A Friend]
+% name|Type:String
+% homepage|Type:URI
+% Person|Category
+% knows|Type:Page
+% ...

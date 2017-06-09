@@ -1,0 +1,3 @@
+The samples were prepared with an initial crack length of [[initialCrackLength::280]]. 
+
+The width of each specimen was [[specimenWidth:20]], the height was [[specimenHeight:10]] and the length was [[specimenLength:200]].

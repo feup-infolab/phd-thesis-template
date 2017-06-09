@@ -1,0 +1,96 @@
+%!TEX root = ../TeseDoutoramento.tex
+
+%All entry types that are NOT commented will have their URLs removed in the bibliography.
+\AtEveryBibitem{%
+  \ifentrytype{article}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  \ifentrytype{book}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  \ifentrytype{booklet}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  \ifentrytype{conference}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  \ifentrytype{inbook}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  \ifentrytype{incollection}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  \ifentrytype{inproceedings}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  % \ifentrytype{manual}
+  % {%
+  %   \clearfield{url}%
+  %   \clearfield{urldate}%
+  % }%
+  
+  \ifentrytype{proceedings}
+  {%
+    \clearfield{url}%
+    \clearfield{urldate}%
+  }%
+  
+  
+  % \ifentrytype{unpublished}
+  % {%
+  %   \clearfield{url}%
+  %   \clearfield{urldate}%
+  % }%
+  
+  % \ifentrytype{misc}
+  % {%
+  %   \clearfield{url}%
+  %   \clearfield{urldate}%
+  % }%
+  
+  % \ifentrytype{techreport}
+  % {%
+  %   \clearfield{url}%
+  %   \clearfield{urldate}%
+  % }%
+  
+  % \ifentrytype{mastersthesis}
+  % {%
+  %   \clearfield{url}%
+  %   \clearfield{urldate}%
+  % }%
+  %
+  % \ifentrytype{phdthesis}
+  % {%
+  %   \clearfield{url}%
+  %   \clearfield{urldate}%
+  % }%
+}

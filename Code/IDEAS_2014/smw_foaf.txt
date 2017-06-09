@@ -1,0 +1,12 @@
+//Defining the DCB ontology in Semantic MediaWiki
+
+http://dendro.com/ontology/dcb/|[http://dendro.com Double Cantilever Beam]
+ specimenLength|Type:Number
+ specimenWidth|Type:Number
+ specimenHeight|Type:Number
+ specimenInitialCrackLenght|Type:Number
+ specimenProperties|Type:String
+ temperature|Type:String
+ moisture|Type:String
+ testVelocity|Type:String
+ 

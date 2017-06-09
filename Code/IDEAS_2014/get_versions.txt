@@ -1,0 +1,6 @@
+SELECT *
+FROM <http://127.0.0.1:3000/dendro_graph>
+WHERE
+{
+	?version ddr:isVersionOf <http://127.0.0.1:3000/project/dcb/data/Base%20Data>.
+}

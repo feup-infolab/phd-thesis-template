@@ -1,0 +1,62 @@
+%!TEX root = ../TeseDoutoramento.tex
+
+%*******************************************************
+% Contents
+%*******************************************************
+\selectlanguage{english}
+
+%%Table of Contents
+
+\phantomsection
+\pdfbookmark{\contentsname}{tableofcontents}
+\setcounter{tocdepth}{2}
+\begingroup 
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+
+    \tableofcontents
+\endgroup
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}} 
+
+\begingroup 
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+\endgroup
+
+%%LIST OF FIGURES
+
+\cleardoublepage
+\phantomsection
+\pdfbookmark[0]{List of Figures}{figures}
+\setcounter{tocdepth}{2}
+\begingroup 
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+
+	 \listoffigures
+\endgroup
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}} 
+
+\begingroup 
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+\endgroup
+
+%%LIST OF TABLES
+
+\cleardoublepage
+\phantomsection
+\pdfbookmark[0]{List of Tables}{tables}
+\setcounter{tocdepth}{2}
+\begingroup 
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+
+	 \listoftables
+\endgroup
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}} 
+
+\begingroup 
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+\endgroup

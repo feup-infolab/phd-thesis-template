@@ -1,0 +1,110 @@
+% \documentclass[10pt,a4paper,twoside,openright,titlepage,fleqn,%
+%                headinclude,,footinclude,BCOR5mm,%
+%                numbers=noenddot,cleardoublepage=empty,%
+%                tablecaptionabove]{scrreprt}
+
+ \documentclass[10pt,a4paper,twoside,openright,titlepage,fleqn,%
+                headinclude,,footinclude,BCOR5mm,%
+                numbers=noenddot,%
+                tablecaptionabove]{scrreprt}
+
+\usepackage[english,portuguese]{babel}
+\usepackage{csquotes}
+\usepackage{bbding}
+\usepackage{pifont}
+%\usepackage[applemac]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{stringenc}
+\usepackage{pdfescape}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{varioref}
+\usepackage{chngpage}
+\usepackage{calc}
+\usepackage{hyphenat}
+
+\usepackage[backend=bibtex8,style=numeric,citestyle=numeric,maxnames=99,minnames=1,backref=true,doi=true,isbn=true,url=true,firstinits=true]{biblatex}
+
+
+\input{FrontBackMatter/URLKiller}
+
+%%% --- The following two lines are what needs to be added --- %%%
+%%% FORCE BREAK URLS IN BIBLIOGRAPHY %%
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{fixltx2e}
+\usepackage{relsize}
+\usepackage[eulerchapternumbers,subfig,beramono,eulermath,pdfspacing,listings]{classicthesis}
+\usepackage{listingsutf8}
+\usepackage{imakeidx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage[style=long,nolist,acronym]{glossaries}
+
+\usepackage{tabularx}
+\newtheorem{hypo}{Hypothesis}
+\newtheorem{subhyp}{Research Question}
+\renewcommand\thesubhyp{\thehyp\alph{subhyp}}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\makeglossaries
+\input{command-hammers}
+\input{FrontBackMatter/Hyphenation}
+\input{codeSettings}
+
+\usepackage{arsclassica}
+
+\newlength\longest
+
+\input{arsclassica-settings}
+
+\bibliography{library}  % sigproc.bib is the name of the Bibliography in this case
+
+%Glossary entries
+\loadglsentries[main]{FrontBackMatter/GlossaryEntries}
+\loadglsentries[acronym]{FrontBackMatter/AcronymsEntries}
+
+\begin{document}
+\pagenumbering{roman}
+\pagestyle{plain}
+%******************************************************************
+% Frontmatter
+%******************************************************************
+\input{FrontBackMatter/Titlepage}
+\input{FrontBackMatter/Titleback}
+\clearpage
+\input{FrontBackMatter/Abstract+Resumo}
+\input{FrontBackMatter/Acknowledgements}
+\input{FrontBackMatter/Quote}
+\pagestyle{scrheadings}
+\clearpage
+\input{FrontBackMatter/Contents}
+\input{FrontBackMatter/Glossary}
+\cleardoublepage
+%******************************************************************
+% Mainmatter
+%******************************************************************
+\pagenumbering{arabic}
+
+\setcounter{table}{0}
+
+\input{Parts/Structure}
+
+% *****************************************************************
+% Backmatter
+%******************************************************************
+\clearpage
+\begingroup
+\parfillskip=0pt
+\input{FrontBackMatter/Bibliography}
+\endgroup
+\clearpage
+\input{FrontBackMatter/Index}
+\end{document}

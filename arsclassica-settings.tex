@@ -1,0 +1,253 @@
+%!TEX root = ./TeseDoutoramento.tex
+
+% ********************************************************************
+% arsclassica-settings
+% ********************************************************************
+
+
+
+\newcommand{\myName}{Jacky Ickx}
+\newcommand{\mySupervisor}{Michel Vaillant (Ph.D.)}
+\newcommand{\myCoSupervisor}{Bob Kramer (Ph.D.)}
+\newcommand{\myFundingAgency}{Fundação para a Ciência e a Tecnologia (FCT)}
+\newcommand{\myTitle}{Impact of rubber-silicate compounds in the opacity of tire smoke with an application to drifting and other motorsports}
+\newcommand{\mySubTitle}{Ph.D. Thesis}
+\newcommand{\myLocation}{Porto, Portugal}
+\newcommand{\myGroup}{Faculdade de Engenharia da Universidade do Porto / INESC TEC}
+\newcommand{\myUrl}{\url{http://www.fe.up.pt}}
+\newcommand{\myTime}{2016, May}
+
+\newtheorem*{thesisstatement}{Thesis Statement}
+\newtheorem{researchquestion}{Research Question}
+
+% ********************************************************************
+% hyperref
+% ********************************************************************
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+% ********************************************************************
+% makeidx, multicol
+% ********************************************************************
+\let\orgtheindex\theindex
+\let\orgendtheindex\endtheindex
+\def\theindex{%
+	\def\twocolumn{\begin{multicols}{2}}%
+	\def\onecolumn{}%
+	\clearpage
+	\orgtheindex
+}
+\def\endtheindex{%
+	\end{multicols}%
+	\orgendtheindex
+}
+
+\makeindex
+
+
+% ********************************************************************
+% listings
+% ********************************************************************
+
+\definecolor{lightergray}{gray}{0.99}
+
+\lstset{keywordstyle=\color{RoyalBlue},
+    basicstyle=\footnotesize\ttfamily,
+    commentstyle=\color{Emerald}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=none,
+    numberstyle=\tiny,
+    stepnumber=5,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=lines,
+    backgroundcolor=\color{lightergray},
+	extendedchars=true,
+	inputencoding=utf8,
+	literate={<}{{<}}1
+	         {>}{>}1
+	         {ü}{{\"u}}1
+}
+
+\lstset{	morekeywords=%
+        {RequirePackage,newboolean,DeclareOption,setboolean,%
+        ProcessOptions,PackageError,ifthenelse,boolean,%
+        chapterNumber,sodef,textls,allcapsspacing,%
+        MakeTextLowercase,orgtheindex,endtheindex,%
+        @ifpackageloaded,undefined,sfdefault,%
+        DeclareRobustCommand,spacedallcaps,%
+        microtypesetup,MakeTextUppercase,lowsmallcapsspacing,%
+        lowsmallcapsspacing,spacedlowsmallcaps,
+        spacedlowsmallcaps,lehead,headmark,color,%
+        headfont,partname,thepart,titleformat,part,
+        titlerule,chapter,thechapter,thesection,%
+        subsection,thesubsection,thesubsubsection,%
+        paragraph,theparagraph,descriptionlabel,titlespacing,%
+        graffito,lineskiplimit,finalhyphendemerits,%
+        colorbox,captionsetup,labelitemi,%
+        myincludegraphics,hypersetup,setlength,%
+        definecolor,lsstyle,textssc,subsubsection,%
+        graffito@setup,includegraphics,ifdefined,%
+        myTitle,textcopyright,myName,lstset,lstnewenvironment,%
+        setkeys,lst@BeginAlsoWriteFile,contentsname,%
+        toc@heading,@ppljLaTeX,z@,check@mathfonts,%
+        sf@size,ptctitle,mtctitle,stctitle,lst@intname,%
+        @empty,math@fontsfalse,@ppljscTeX,@iwonaTeX,%
+        @iwonascLaTeX,@ctTeX,tw@,ct@sc,@ctTeX,f@family,%
+        f@shape,ct@sc,ctLaTeX,ctLaTeXe,@twoe,@sctwoe,%
+        texorpdfstring,m@th,ctTeX,@mkboth,ProvidesPackage,%
+        theindex,PackageInfo,PackageWarningNoLine,%
+        mtifont,mtcindent,@iwonaLaTeX,@ppljTeX,@iwonascTeX,%
+        rohead,orgendtheindex,@ppljscLaTeX,%
+        @ifclassloaded,toc@headingbkORrp,backreftwosep,%
+        backrefalt,backreflastsep,areaset,pnumfont,%
+        arsincludegraphics,ExecuteOptions,PackageWarning,textcolor,%
+        MessageBreak,ars@@includegraphics,ifcld@backref,rofoot,formatchapter,%
+        if@twoside},
+        commentstyle=\color{Emerald}\ttfamily,%
+        frame=lines}
+
+\lstset{basicstyle=\footnotesize\ttfamily}
+\lstset{flexiblecolumns=true}
+\lstset{moredelim={[is][\normalfont\itshape]{/*}{*/}}}
+\lstset{basicstyle=\footnotesize\ttfamily}
+\lstset{flexiblecolumns=false}
+\lstset{moredelim={[is][\ttfamily]{!?}{?!}}}
+\lstset{escapeinside={£*}{*£}}
+\lstset{firstnumber=last}
+\lstset{moredelim={[is][\ttfamily]{!?}{?!}}}
+
+%SECRET FOR WRONG CHARACTERS HERE! UTF8 PROBLEMS SOLVED
+
+\lstset{basicstyle=\footnotesize\ttfamily,columns=flexible,frame=single,framerule=0pt,%
+    backgroundcolor=\color{gray!20},%
+    xleftmargin=\fboxsep,%
+    xrightmargin=\fboxsep,
+    language=SQL,%
+ 	extendedchars=true,
+    keywordstyle=\color{blue},%
+        mathescape=false,escapechar=|,%
+        literate={<B>}{\textcolor{blue}{\string\usepackage}}1
+                           {\{ }{\textcolor{red}{\{}}1
+                           {\}}{\textcolor{red}{\}}}1
+						   {\_}{\textcolor{black}{\_}}1
+						   {<}{\textcolor{black}{$<$}}1
+   						   {>}{\textcolor{black}{$>$}}1
+                           {[}{\textcolor{green}{[}}1
+                           {]}{\textcolor{green}{]}}1
+		 }
+
+\DeclareRobustCommand*{\pacchetto}[1]{{\normalfont\ttfamily#1}%
+\index{Pacchetto!#1@\texttt{#1}}%
+\index{#1@\texttt{#1}}}
+
+\DeclareRobustCommand*{\bibtex}{\textsc{Bib}\TeX%
+\index{bibtex@\textsc{Bib}\protect\TeX}%
+}
+
+\DeclareRobustCommand*{\amseuler}{\protect\AmS{} Euler%
+\index{AmS Euler@\protect\AmS~Euler}%
+\index{Font!AmS Euler@\protect\AmS~Euler}}
+
+\lstnewenvironment{code}%
+{\setkeys{lst}{columns=fullflexible,keepspaces=true}%
+\lstset{basicstyle=\small\ttfamily}%
+}{}
+
+\lstset{extendedchars}
+\lstnewenvironment{sidebyside}{%
+    \global\let\lst@intname\@empty
+    \setbox\z@=\hbox\bgroup
+    \setkeys{lst}{columns=fullflexible,%
+    linewidth=0.45\linewidth,keepspaces=true,%
+    breaklines=true,%
+    breakindent=0pt,%
+    boxpos=t,%
+    basicstyle=\small\ttfamily
+}%
+    \lst@BeginAlsoWriteFile{\jobname.tmp}%
+}{%
+    \lst@EndWriteFile\egroup
+        \begin{center}%
+            \begin{minipage}{0.45\linewidth}%
+                \hbox to\linewidth{\box\z@\hss}
+            \end{minipage}%
+            \qquad
+            \begin{minipage}{0.45\linewidth}%
+            \setkeys{lst}{frame=none}%
+                \leavevmode \catcode`\^^M=5\relax
+                \small\input{\jobname.tmp}%
+            \end{minipage}%
+        \end{center}%
+}
+
+\newcommand{\omissis}{[\dots\negthinspace]}
+
+\graphicspath{{Graphics/}}
+
+\hyphenation{Robert Bring-hurst DejaVu
+Bera Mono Vera Classic-Thesis suite Knuth Zapf}
+
+\newcommand{\meta}[1]{$\langle${\normalfont\itshape#1}$\rangle$}
+\lstset{escapeinside={£*}{*£}}
+
+
+\DeclareRobustCommand*{\miktex}{MiK\TeX%
+\index{miktex@MiK\protect\TeX}%
+}
+
+\DeclareRobustCommand*{\metafont}{\MF%
+\index{METAFONT@\protect\MF}%
+}
+
+\DeclareRobustCommand*{\metapost}{\MP%
+\index{METAPOST@\protect\MP}%
+}
+
+\DeclareRobustCommand*{\texlive}{\TeX{}~Live%
+\index{texlive@\protect\TeX{}~Live}%
+}
+
+
+% ********************************************************************
+% biblatex
+% ********************************************************************
+
+\bibliography{library}
+
+% ********************************************************************
+% other commands
+% ********************************************************************
+
+\newcommand{\ita}[1]{%
+  \begin{otherlanguage*}{italian}#1\end{otherlanguage*}}
+
+\DeclareRobustCommand*{\pkgname}[1]{{\normalfont\sffamily#1}%
+\index{Package!#1@\textsf{#1}}%
+\index{#1@\textsf{#1}}}
+
+\DeclareRobustCommand*{\envname}[1]{{\normalfont\ttfamily#1}%
+\index{Environment!#1@\texttt{#1}}%
+\index{#1@\texttt{#1}}}
+
+\DeclareRobustCommand*{\optname}[1]{{\normalfont\ttfamily#1}%
+\index{Option!#1@\texttt{#1}}%
+\index{#1@\texttt{#1}}}
+
+\DeclareRobustCommand*{\clsname}[1]{{\normalfont\sffamily#1}%
+\index{Class!#1@\textsf{#1}}%
+\index{#1@\textsf{#1}}}
+
+\DeclareRobustCommand*{\cmdname}[1]{\mbox{\lstinline!\\#1!}%
+\index{#1@\texttt{\hspace*{-1.2ex}\textbackslash#1}}}
+
+\DeclareRobustCommand*{\classicthesis}{Classic\-Thesis}
+
+\DeclareRobustCommand*{\arsclassica}{{\normalfont\sffamily ArsClassica}}
+
+\DeclareRobustCommand*{\miktex}{MiK\TeX%
+\index{miktex@MiK\protect\TeX}}
+
+\DeclareRobustCommand*{\texlive}{\TeX{}~Live%
+\index{texlive@\protect\TeX{}~Live}}
